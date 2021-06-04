@@ -16,7 +16,6 @@ namespace GroceryPals.Models.ViewModels
         public SelectList Cats { get; set; }
         public string ProdCat { get; set; }
 
-
         public SelectList Prices { get; set; }
         public string ProdPrice { get; set; }
 

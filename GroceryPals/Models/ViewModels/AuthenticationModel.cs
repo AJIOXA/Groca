@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace GroceryPals.Models.ViewModels
 {
 	public class AuthenticationModel
+
 	{
+		
 		[Required]
 		
 		public string Verification { get; set; }

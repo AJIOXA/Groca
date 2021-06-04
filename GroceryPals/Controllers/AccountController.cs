@@ -62,13 +62,13 @@ namespace GroceryPals.Controllers
 
 							MailMessage mail = new MailMessage();
 							mail.To.Add(user.Email);
-							mail.From = new MailAddress("palsgrocery@gmail.com");
+							mail.From = new MailAddress("linuxkalibsuir@gmail.com");
 							mail.Subject = "Verification";
 							mail.Body = "Your code is: " + Verification.Code;
 							mail.IsBodyHtml = true;
 							SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
 							smtp.UseDefaultCredentials = false;
-							smtp.Credentials = new System.Net.NetworkCredential("palsgrocery@gmail.com", "Secret123$");
+							smtp.Credentials = new System.Net.NetworkCredential("linuxkalibsuir@gmail.com", "KaliTest123");
 							smtp.EnableSsl = true;
 							smtp.Send(mail);
 							return Redirect("/Account/Confirm");
@@ -134,7 +134,8 @@ namespace GroceryPals.Controllers
 				AppUser user = new AppUser
 				{
 					UserName = model.Name,
-					Email = model.Email
+					Email = model.Email,
+					PhoneNumber = model.PhoneNumber
 				};
 				IdentityResult result
 				= await userManager.CreateAsync(user, model.Password);

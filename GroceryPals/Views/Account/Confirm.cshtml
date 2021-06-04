@@ -1,8 +1,7 @@
 ﻿@model AuthenticationModel
-
 @{
     ViewBag.Title = "Confirm";
-    Layout = "_Layout";
+    Layout = "_Layout_confirm";
 }
 
 <link rel="stylesheet" href="/css/form.css">
@@ -15,6 +14,7 @@
         <form asp-action="Confirm" asp-controller="Account" method="post">
             <div class="text-danger" asp-validation-summary="All" style="text-align: center;font-weight: bolder;"></div>
             <h3 style="color:black;">We sent a verification code to your email</h3>
+            <p id="info"><i class="fa fa-user-o" aria-hidden="true" style="padding-right:5px;"></i></p>
             <label for="code">Please Enter:</label>
             <input asp-for="Verification" class="form-control" />
             <div class="submit">
@@ -29,7 +29,7 @@
                                                                                 background-color: gray;">Cancel<i class="fa fa-times-circle" aria-hidden="true" style="margin-left:4px;"></i></a>
             </div>
         </form>
-       
+
     </div>
 
 

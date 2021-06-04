@@ -16,7 +16,7 @@ namespace GroceryPals.Controllers
 		private IProductRepository repository;
 
 		public int PageSize = 4;
-		private readonly Expression<Func<Product, object>> lenght;
+		private readonly Expression<Func<Product, object>> length;
 
 
 
@@ -102,7 +102,7 @@ namespace GroceryPals.Controllers
                 double low = Convert.ToDouble(someArray[0]);
                 double hight = Convert.ToDouble(someArray[1]);
                 products = products.Where(x => x.Price >=low);
-                products = products.Where(x => x.Price <= hight);
+                products = products.Where(x => x.Price <hight);
             }
 
             var prodVM = new ProductListViewModel

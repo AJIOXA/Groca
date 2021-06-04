@@ -51,10 +51,19 @@ namespace GroceryPals.Controllers
 				return View(order);
 			}
 		}
-        public ViewResult payment()
+		public ViewResult payment() => View(new PaymentInf());
+		
+		[HttpPost]
+		public IActionResult Payment(PaymentInf payment)
 		{
-			cart.Clear();
-			return View();
+			
+			if (ModelState.IsValid)
+			{
+				cart.Clear();
+				return View(nameof(completed));
+			}
+			//ModelState.AddModelError("", "Invalid payment information, try again");
+			return View(nameof(payment));
 		}
         public ViewResult completed()
         {

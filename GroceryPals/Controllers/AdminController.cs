@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using GroceryPals.Models;
+using System.Text.Json;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 
 namespace GroceryPals.Controllers
 {
@@ -49,6 +52,23 @@ namespace GroceryPals.Controllers
 				TempData["message"] = $"{deletedProduct.Name} was deleted";
 			}
 			return RedirectToAction("Index");
+		}
+
+		public FileResult SaveUsers()
+		{
+			var options = new JsonSerializerOptions
+			{
+				Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin),
+				PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+				WriteIndented = true,
+				IgnoreNullValues = true
+			};
+
+			var json = JsonSerializer.Serialize(repository.Products, options);
+			System.IO.File.WriteAllText($"{Environment.CurrentDirectory}\\file.json", json);
+			byte[] fileBytes = System.IO.File.ReadAllBytes($"{Environment.CurrentDirectory}\\file.json");
+			string fileName = "users.json";
+			return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
 		}
 	}
 }

@@ -24,22 +24,8 @@
            
             <ol class="nav">
 
-
-                <li><a asp-controller="Product" asp-action="Index">Home Page</a></li>
-                <li><a asp-controller="Account" asp-action="Login">Log In</a></li>
-                <li><a asp-controller="Product" asp-action="Search">Products</a></li>
-                <li><a asp-controller="Admin" asp-action="Index">Admin</a></li>
-
-                @*<li><a asp-action="Create">Add Item</a></li>*@
             </ol>
-            @if (User.Identity.IsAuthenticated)
-            {
-                <div id="userinfo">
-                    <p id="info"><i class="fa fa-user-o" aria-hidden="true" style="padding-right:5px;"></i>@User.Identity.Name</p>
-                    <br />
-                    <a class="btn btn-sm btn-primary" asp-action="Logout" asp-controller="Account" id="logout"><i class="fa fa-sign-out" aria-hidden="true" style="padding-right:5px;"></i>Log Out</a>
-                </div>
-            }
+
         </div>
        
     </header>

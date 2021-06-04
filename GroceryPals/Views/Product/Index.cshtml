@@ -8,7 +8,7 @@
 
         <h2 data-aos="fade-left" data-aos-delay="300">Fresh and Afforable Grocery, Anywhere, Anytime.  </h2>
         <p class="home-paragraph">
-            <a data-aos="fade-right"  data-aos-delay="300">GroceryPals is an online store with various finest grocices. Our goal is make your shopping more easy and convenient. Established in the beginning of 2020, our store is one of fastest growing online store in Canada. </a>
+            <a data-aos="fade-right"  data-aos-delay="300">GroceryPals is an online store with various finest grocices. Our goal is make your shopping more easy and convenient. Established in the beginning of 2021, our store is one of fastest growing online store in Belarus. </a>
         </p>
         <div class="icon">
             <img src="/images/star.png" data-aos="fade-up"  data-aos-delay="500">
@@ -24,20 +24,20 @@
 
 <div class="map-section">
     <h1 id="introduction" class="intro-title" style="background-color: #fff;">Getting Started</h1>
-    <p class="intro-paragraph">Find the nearest eligible grocery pal location below! Select your favourite store and get started with your order now!</p>
+    <p class="intro-paragraph">Find the nearest eligible grocery pal location below! Select your city and get started with your order now!</p>
 
     <h4 class="intro-location">Selected Location: <span id="defaultStoreLocation"></span></h4>
     <div class="store-navbar">
-        <button type="button" class="btn btn-outline-primary store-button" onclick="getWalmartLocations()">Walmart</button>
-        <button type="button" class="btn btn-outline-success store-button" onclick="getLoblawsLocations()">Loblaws</button>
-        <button type="button" class="btn btn-outline-danger store-button" onclick="getMetroLocations()">Metro</button>
-        <button type="button" class="btn btn-outline-secondary store-button" onclick="getCostcoLocations()">Costco</button>
+        <button type="button" class="btn btn-outline-primary store-button" onclick="getWalmartLocations()">Minsk</button>
+        <button type="button" class="btn btn-outline-success store-button" onclick="getLoblawsLocations()">Brest</button>
+        <button type="button" class="btn btn-outline-danger store-button" onclick="getMetroLocations()">Gomel</button>
+        <button type="button" class="btn btn-outline-secondary store-button" onclick="getCostcoLocations()">Vitebsk</button>
         <button type="button" class="btn btn-light clear-button" onclick="clearLocations()">Clear Map</button>
     </div>
     <div class="frame">
         <div id="map"></div>
     </div>
-    <a asp-controller="Product" asp-action="List" class="btn btn-primary btn-lg frame order-button">Create a new order</a>
+    <a asp-controller="Product" asp-action="Search" class="btn btn-primary btn-lg frame order-button">Create a new order</a>
     
 </div>
 
@@ -50,7 +50,7 @@
                 <br />
                 <a>Category: Fruit </a>
                 <br />
-                <a>Origin: ON/Canada </a>
+                <a>Origin: ON/Australia </a>
                 <br />
                 <a>Product No: 462879 </a>
                 <br />
@@ -71,7 +71,7 @@
             <h1>Flank Steak</h1>
             <a>Price: 1.2$/lbs </a>
             <br />
-            <a>Category: Fruit </a>
+            <a>Category: Meat </a>
             <br />
             <a>Origin: ON/Canada </a>
             <br />
@@ -85,7 +85,7 @@
                 <h1>Vegetable Mix</h1>
                 <a>Price: 1.2$/lbs </a>
                 <br />
-                <a>Category: Fruit </a>
+                <a>Category: Vegetable </a>
                 <br />
                 <a>Origin: ON/Canada </a>
                 <br />
@@ -110,9 +110,9 @@
             <h1>Egg Bag</h1>
             <a>Price: 1.2$/lbs </a>
             <br />
-            <a>Category: Fruit </a>
+            <a>Category: Grocery </a>
             <br />
-            <a>Origin: ON/Canada </a>
+            <a>Origin: ON/Russia </a>
             <br />
             <a>Product No: 462879 </a>
             <br />
@@ -125,9 +125,9 @@
                 <h1>Large Lobster</h1>
                 <a>Price: 1.2$/lbs </a>
                 <br />
-                <a>Category: Fruit </a>
+                <a>Category: Meat </a>
                 <br />
-                <a>Origin: ON/Canada </a>
+                <a>Origin: ON/Alyaska </a>
                 <br />
                 <a>Product No: 462879 </a>
                 <br />

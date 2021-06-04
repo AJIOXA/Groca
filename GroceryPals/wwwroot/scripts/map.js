@@ -67,59 +67,59 @@ function clearLocations() {
     markers.length = 0;
 }
 
-// Re-initialize the map with markers at all walmart locations
+// Re-initialize the map with markers at all Minsk Locations
 function getWalmartLocations() {
 
     clearLocations();
 
     const walmartStores = [
         {
-            position: new google.maps.LatLng(43.775779724121094, -79.26200866699219),
+            position: new google.maps.LatLng(53.9190806, 27.5768074),
             type: 'store',
-            title: 'Walmart Scarborough Town Centre',
-            address: '300 Borough Dr, Scarborough, ON M1P 4P5'
+            title: 'Grocery Pals - Komarovka dist.',
+            address: '8 Horuzhai St, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.742699, -79.224022),
+            position: new google.maps.LatLng(53.933529, 27.64947),
             type: 'store',
-            title: 'Walmart Pharmacy',
-            address: '3132 Eglinton Ave E, Scarborough, ON M1J 2H1'
+            title: 'Grocery Pals - Dana Moll dist.',
+            address: '11 Petra Mstislavca St, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.726639, -79.294067),
+            position: new google.maps.LatLng(53.9079983, 27.5350847),
             type: 'store',
-            title: 'Walmart Scarborough West',
-            address: '1900 Eglinton Ave E, Scarborough, ON M1L 2L9'
+            title: 'Grocery Pals - Gallileo dist.',
+            address: '6 Bobruiskaya St, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.794640, -79.235020),
+            position: new google.maps.LatLng(53.9054286, 27.5727813),
             type: 'store',
-            title: 'Walmart Agincourt',
-            address: '3850 Sheppard Ave E, Scarborough, ON M1T 3L3'
+            title: 'Grocery Pals - Galleria dist.',
+            address: '6 Pobeditelei Ave, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.667987, -79.484753),
+            position: new google.maps.LatLng(53.9374601, 27.513473),
             type: 'store',
-            title: 'Walmart Junction',
-            address: '2525 St Clair Ave W, Toronto, ON M6N 4Z5'
+            title: 'Grocery Pals - Arena City dist.',
+            address: '84 Podeditelei Ave, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.757708, -79.488687),
+            position: new google.maps.LatLng(53.8552739, 27.5852852),
             type: 'store',
-            title: 'Walmart Downsview',
-            address: '3757 Keele St, North York, ON M3J 1N4'
+            title: 'Grocery Pals - E-City dist.',
+            address: '3 Gashkevicha St, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.721766, -79.511720),
+            position: new google.maps.LatLng(53.9160307, 27.5279503),
             type: 'store',
-            title: 'Walmart Sheridan Mall',
-            address: '2202 Jane St, North York, ON M3M 1A4'
+            title: 'Grocery Pals - Bonus Mall dist.',
+            address: '2-2 V.Golubka St, Minsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.8106051, -79.4528302),
+            position: new google.maps.LatLng(53.8843648, 27.4988264),
             type: 'store',
-            title: 'Walmart Thornhill',
-            address: '700 Centre St, Thornhill, ON L4J 0A7'
+            title: 'Grocery Pals - Magnit dist.',
+            address: '106 Dzerzhinskogo Ave, Minsk, Belarus'
         }
     ]
 
@@ -148,59 +148,29 @@ function getWalmartLocations() {
     map.setZoom(11);
 }
 
-// Re-initialize the map with markers at all Loblaws locations
+// Re-initialize the map with markers at all Brest locations
 function getLoblawsLocations(){
 
     clearLocations();
     
     const loblawsStores = [
         {
-            position: new google.maps.LatLng(43.735304, -79.404278),
+            position: new google.maps.LatLng(52.0990742, 23.6925411),
             type: 'store',
-            title: 'Loblaws Yonge and Yonge',
-            address: '3501 Yonge St, North York, ON M4N 2N5'
+            title: 'Grocery Pals - Brest Rinok dist.',
+            address: '25 Karbysheva St, Brest, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.707165, -79.394601),
+            position: new google.maps.LatLng(52.0953473, 23.6954599),
             type: 'store',
-            title: 'Loblaws Yonge and Eglinton',
-            address: '101 Eglinton Ave E #1, Toronto, ON M4P 1H4'
+            title: 'Grocery Pals - Laguna dist.',
+            address: '19 Volgogradskaya St, Brest, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.688509, -79.288224),
+            position: new google.maps.LatLng(52.1021704, 23.7684761),
             type: 'store',
-            title: 'Loblaws Victoria Park',
-            address: '50 Musgrave St, Toronto, ON M4E 3W2'
-        },
-        {
-            position: new google.maps.LatLng(43.661001, -79.328338),
-            type: 'store',
-            title: 'Loblaws Leslieville',
-            address: '17 Leslie St, Toronto, ON M4M 3H9'
-        },
-        {
-            position: new google.maps.LatLng(43.699984, -79.360162),
-            type: 'store',
-            title: 'Loblaws Leaside',
-            address: '11 Redway Rd, East York, ON M4H 1P6'
-        },
-        {
-            position: new google.maps.LatLng(43.685086, -79.356804),
-            type: 'store',
-            title: 'Loblaws Bayview',
-            address: '2877 Bayview Ave, North York, ON M2K 2S3'
-        },
-        {
-            position: new google.maps.LatLng(43.684145, -79.415488),
-            type: 'store',
-            title: 'Loblaws St Clair',
-            address: '396 St Clair Ave W, Toronto, ON M5P 3N3'
-        },
-        {
-            position: new google.maps.LatLng(43.654829, -79.450545),
-            type: 'store',
-            title: 'Loblaws Dundas',
-            address: '2280 Dundas St W, Toronto, ON M6R 1X3'
+            title: 'Grocery Pals - Yubileyny dist.',
+            address: '328 Moscow St, Brest, Belarus'
         }
     ];
 
@@ -228,59 +198,29 @@ function getLoblawsLocations(){
     map.setZoom(11);
 }
 
-// Re-initialize the map with markers at all Metro locations
+// Re-initialize the map with markers at all Gomel locations
 function getMetroLocations() {
 
     clearLocations();
 
     const metroStores = [
         {
-            position: new google.maps.LatLng(43.7577822, -79.3145775),
+            position: new google.maps.LatLng(52.4239855, 30.9951667),
             type: 'store',
-            title: 'Metro Ellesmere',
-            address: '15 Ellesmere Rd, Scarborough, ON M1R 4B7'
+            title: 'Grocery Pals - Secret dist.',
+            address: '65 Gagarina St, Gomel, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.7724563,-79.2805428),
+            position: new google.maps.LatLng(52.4057513, 30.9218757),
             type: 'store',
-            title: 'Metro Kennedy Commons',
-            address: '16 William Kitchen Rd, Scarborough, ON M1P 5B7'
+            title: 'Grocery Pals - Zarko dist.',
+            address: '62a Rechizky Ave, Gomel, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.743466,-79.216242),
+            position: new google.maps.LatLng(52.3883508, 31.0269088),
             type: 'store',
-            title: 'Metro Kingston',
-            address: '3221 Eglinton Ave E, Scarborough, ON M1J 2H7'
-        },
-        {
-            position: new google.maps.LatLng(43.7243565,-79.3009221),
-            type: 'store',
-            title: 'Metro Eglinton Square',
-            address: '40 Eglinton Square, Scarborough, ON M1L 2K1'
-        },
-        {
-            position: new google.maps.LatLng(43.733898,-79.34375),
-            type: 'store',
-            title: 'Metro Don Mills',
-            address: '1050 Don Mills Rd, North York, ON M3C 1W6'
-        },
-        {
-            position: new google.maps.LatLng(43.7473505,-79.3855761),
-            type: 'store',
-            title: 'Metro York Mills',
-            address: '291 York Mills Rd, North York, ON M2L 1L3'
-        },
-        {
-            position: new google.maps.LatLng(43.719406,-79.430214),
-            type: 'store',
-            title: 'Metro Bathurst',
-            address: '3090 Bathurst St, North York, ON M6A 2A2'
-        },
-        {
-            position: new google.maps.LatLng(43.639949,-79.417868),
-            type: 'store',
-            title: 'Metro Liberty Village',
-            address: '100 Lynn Williams St, Toronto, ON M6K 3N6'
+            title: 'Grocery Pals - Etyud dist.',
+            address: '57 Ilycha St, Gomel, Belarus'
         }
     ];
 
@@ -308,53 +248,29 @@ function getMetroLocations() {
     map.setZoom(11);
 }
 
-// Re-initialize the map with markers at all Costco locations
+// Re-initialize the map with markers at all Vitebsk locations
 function getCostcoLocations() {
 
     clearLocations();
 
     const costcoStores = [
         {
-            position: new google.maps.LatLng(43.759388,-79.297859),
+            position: new google.maps.LatLng(55.1957225, 30.1853476, 17),
             type: 'store',
-            title: 'Costco Warden',
-            address: '1411 Warden Ave, Scarborough, ON M1R 2S3'
+            title: 'Grocery Pals - Metro Park dist.',
+            address: '10A Kosmonavtov St, Vitebsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.731625,-79.282944),
+            position: new google.maps.LatLng(55.1704452, 30.2180282),
             type: 'store',
-            title: 'Costco Eglinton',
-            address: '50 Thermos Rd, Scarborough, ON M1L 0E6'
+            title: 'Grocery Pals - TriO dist.',
+            address: '15V Stroitelei St, Vitebsk, Belarus'
         },
         {
-            position: new google.maps.LatLng(43.70568,-79.350027),
+            position: new google.maps.LatLng(55.1761303, 30.2029482),
             type: 'store',
-            title: 'Costco Overlea',
-            address: '42 Overlea Blvd, Toronto, ON M4H 1B6'
-        },
-        {
-            position: new google.maps.LatLng(43.732796,-79.451431),
-            type: 'store',
-            title: 'Costco Downsview',
-            address: '100 Billy Bishop Way, North York, ON M3K 2C8'
-        },
-        {
-            position: new google.maps.LatLng(43.732796,-79.451431),
-            type: 'store',
-            title: 'Costco Vaughn',
-            address: '71 Colossus Dr, Woodbridge, ON L4L 9J8'
-        },
-        {
-            position: new google.maps.LatLng(43.622706,-79.507392),
-            type: 'store',
-            title: 'Costco Etobicoke',
-            address: '50 Queen Elizabeth Blvd, Etobicoke, ON M8Z 1M1'
-        },
-        {
-            position: new google.maps.LatLng(43.844673,-79.353907),
-            type: 'store',
-            title: 'Costco Markham',
-            address: '1 Yorktech Dr, Markham, ON L6G 1B6'
+            title: 'Grocery Pals - Belarus dist.',
+            address: '3 Generala Beloborodova St, Vitebsk, Belarus'
         }
     ];
 
